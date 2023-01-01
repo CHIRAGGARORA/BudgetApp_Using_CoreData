@@ -11,6 +11,14 @@
 		E2D7565829615EE50085E846 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D7565729615EE50085E846 /* ContentView.swift */; };
 		E2D7565A29615EE70085E846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D7565929615EE70085E846 /* Assets.xcassets */; };
 		E2D7565D29615EE70085E846 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D7565C29615EE70085E846 /* Preview Assets.xcassets */; };
+		E2D7566529615F320085E846 /* BudgetAppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2D7566329615F320085E846 /* BudgetAppModel.xcdatamodeld */; };
+		E2D7566829615FCF0085E846 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D7566729615FCF0085E846 /* CoreDataManager.swift */; };
+		E2D7566B2961659F0085E846 /* BudgetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D7566A2961659F0085E846 /* BudgetListViewModel.swift */; };
+		E2D7566D296174C50085E846 /* AddBudgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D7566C296174C50085E846 /* AddBudgetViewModel.swift */; };
+		E2D7566F296175600085E846 /* AddBudgetScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D7566E296175600085E846 /* AddBudgetScreen.swift */; };
+		E2D7567229617D0B0085E846 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D7567129617D0B0085E846 /* View+Extensions.swift */; };
+		E2D7567429617ED90085E846 /* Budget+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D7567329617ED90085E846 /* Budget+Extensions.swift */; };
+		E2D7567729617F290085E846 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D7567629617F290085E846 /* BaseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		E2D7565729615EE50085E846 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E2D7565929615EE70085E846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2D7565C29615EE70085E846 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E2D7566429615F320085E846 /* BudgetAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BudgetAppModel.xcdatamodel; sourceTree = "<group>"; };
+		E2D7566729615FCF0085E846 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		E2D7566A2961659F0085E846 /* BudgetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetListViewModel.swift; sourceTree = "<group>"; };
+		E2D7566C296174C50085E846 /* AddBudgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBudgetViewModel.swift; sourceTree = "<group>"; };
+		E2D7566E296175600085E846 /* AddBudgetScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBudgetScreen.swift; sourceTree = "<group>"; };
+		E2D7567129617D0B0085E846 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		E2D7567329617ED90085E846 /* Budget+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Budget+Extensions.swift"; sourceTree = "<group>"; };
+		E2D7567629617F290085E846 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +67,16 @@
 		E2D7565429615EE50085E846 /* BudgetApp */ = {
 			isa = PBXGroup;
 			children = (
+				E2D7567529617F0E0085E846 /* Models */,
+				E2D7567029617CE00085E846 /* Extensions */,
+				E2D75669296165700085E846 /* view Models */,
+				E2D7566629615FA90085E846 /* Managers */,
 				E2D7565529615EE50085E846 /* BudgetAppApp.swift */,
 				E2D7565729615EE50085E846 /* ContentView.swift */,
 				E2D7565929615EE70085E846 /* Assets.xcassets */,
 				E2D7565B29615EE70085E846 /* Preview Content */,
+				E2D7566329615F320085E846 /* BudgetAppModel.xcdatamodeld */,
+				E2D7566E296175600085E846 /* AddBudgetScreen.swift */,
 			);
 			path = BudgetApp;
 			sourceTree = "<group>";
@@ -65,6 +87,40 @@
 				E2D7565C29615EE70085E846 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E2D7566629615FA90085E846 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E2D7566729615FCF0085E846 /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E2D75669296165700085E846 /* view Models */ = {
+			isa = PBXGroup;
+			children = (
+				E2D7566A2961659F0085E846 /* BudgetListViewModel.swift */,
+				E2D7566C296174C50085E846 /* AddBudgetViewModel.swift */,
+			);
+			path = "view Models";
+			sourceTree = "<group>";
+		};
+		E2D7567029617CE00085E846 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E2D7567129617D0B0085E846 /* View+Extensions.swift */,
+				E2D7567329617ED90085E846 /* Budget+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E2D7567529617F0E0085E846 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E2D7567629617F290085E846 /* BaseModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +194,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2D7565829615EE50085E846 /* ContentView.swift in Sources */,
+				E2D7566529615F320085E846 /* BudgetAppModel.xcdatamodeld in Sources */,
+				E2D7566829615FCF0085E846 /* CoreDataManager.swift in Sources */,
+				E2D7566B2961659F0085E846 /* BudgetListViewModel.swift in Sources */,
+				E2D7567729617F290085E846 /* BaseModel.swift in Sources */,
+				E2D7566F296175600085E846 /* AddBudgetScreen.swift in Sources */,
 				E2D7565629615EE50085E846 /* BudgetAppApp.swift in Sources */,
+				E2D7567429617ED90085E846 /* Budget+Extensions.swift in Sources */,
+				E2D7567229617D0B0085E846 /* View+Extensions.swift in Sources */,
+				E2D7566D296174C50085E846 /* AddBudgetViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +403,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E2D7566329615F320085E846 /* BudgetAppModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E2D7566429615F320085E846 /* BudgetAppModel.xcdatamodel */,
+			);
+			currentVersion = E2D7566429615F320085E846 /* BudgetAppModel.xcdatamodel */;
+			path = BudgetAppModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E2D7564A29615EE50085E846 /* Project object */;
 }
